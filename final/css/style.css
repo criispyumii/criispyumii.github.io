@@ -1,0 +1,236 @@
+
+.header {
+    overflow: hidden;
+    background-color :aliceblue;
+    height: 70px;
+} 
+.header a {
+    width: 15px;
+    float: left;
+    margin-inline: 20px;
+    list-style-type: none;
+}
+.header .logo {
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 40px;
+    font-family: 'Fredoka', sans-serif;
+    color: black;
+    float: right;
+    padding-right: 170px;
+    text-shadow: 3px 3px #558ABB;
+}
+.header .logo:hover {
+    text-shadow: 5px 5px #65f07c;
+}
+.header a:hover {
+    width: 18px;
+    height: auto;
+    cursor: pointer;
+}
+#logopic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12%;
+}
+.rectangle {
+    width: 50%;
+    background: #FFFFFF;
+    z-index: 1;
+    border-radius: 100px;
+    margin-bottom: 50px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+h1 { 
+    z-index: 2;
+    font-size: 30px;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    text-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+body {
+    background-color: #b1ebab;
+}
+/*
+.plant-quote {
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#bg-img {
+    width: 700px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 50px;
+} */
+#flex-container {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 30%;
+    margin: 10px;
+}
+#flex-container-right {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    justify-content: center;
+    align-items: space-evenly;
+    width: 28%;
+    margin: 10px;
+}
+#flex-container-middle {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    margin: 10px auto;
+}
+.flex-word {
+    z-index: 3;
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    text-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.flex-word:hover {
+    opacity: 1;
+    z-index:5;
+    font-size: 25px;
+}
+.single-item {
+    background: #fff;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+    height: 400px;
+    width: 375px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .6s ease-out;
+
+}
+.single-item:hover .flex-word {
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.3s;
+    text-align: center;
+}
+
+.flex-word {
+    opacity: 0;  
+}
+.single-item:hover {
+    z-index: 1;
+    background: linear-gradient(to top, #000, transparent);
+}
+.single-item:before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;       
+    content: '';
+    display: block;    
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+}
+.single-item img {
+    z-index: 0;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    height: 400px;
+    width: 375px;
+    background-color: aliceblue;
+}
+.single-item img:hover {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+.border {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+#plantcare {
+    margin-top: 80px;
+}
+
+.slide h1 {
+    z-index: 1;
+    color: white;
+    font-size: 30px;
+    font-family:'Fredroka', sans-serif;
+    text-align: center;
+    margin-top: 35px;
+  }
+.slide p {
+    z-index: 1;
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 5px;
+    margin-top: 40px;
+    line-break: strict;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+
+  }
+.slide {
+    z-index: 0;
+    width: 300px;
+    flex-shrink: 0;
+    height: 100%;
+  }
+
+.slider {
+    z-index: 2;
+    margin: auto;
+    width: 300px;
+    height: 320px;
+    border: 3px solid green;
+    border-radius: 40%;
+    padding: 10px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;  
+    -webkit-overflow-scrolling: touch;
+    background-color: rgba(3, 100, 0, 0.789);
+}
+#leaf {
+    width: auto;
+    height: 100px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+footer {
+    width: 100%;
+    display: inline-block;
+    margin-top: 60px;
+    height: 70px;
+    background-color: #ffffff;
+}
+footer p {
+    margin: auto;
+    padding-left: 4%;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    line-height: 70px;
+    letter-spacing: 1px;
+}
