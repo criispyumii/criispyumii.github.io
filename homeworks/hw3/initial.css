@@ -7,6 +7,8 @@
 }
 
 #navbar {
+	display: flex;
+	flex-direction: row;
 	height: 60px;
 	background: #ffffff;
 }
@@ -27,8 +29,8 @@
 
 #profile-pic {
 	display: inline-block;
-	height: 80px;
-	width: 80px;
+	height: 30px;
+	width: 30px;
 	margin: 20px 60px;
 	background-color: rgba(0, 0, 0, 0.5);
 }
@@ -72,9 +74,9 @@
 }
 
 .item {
-	position: relative;
 	background-color: rgba(0, 0, 0, 0.5);
-	display: inline-block;
+	display: flex;
+	flex-direction: row;
 	opacity: 0.7;
 	overflow: hidden;
 }
